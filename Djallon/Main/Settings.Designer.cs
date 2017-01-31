@@ -28,54 +28,39 @@ namespace Djallon.Assistant.Main
         /// </summary>
         private void InitializeComponent()
         {
-            this.radDropDownList1 = new Telerik.WinControls.UI.RadDropDownList();
-            this.w8 = new Telerik.WinControls.Themes.Windows8Theme();
-            this.o13 = new Telerik.WinControls.Themes.Office2013LightTheme();
-            this.radDropDownList2 = new Telerik.WinControls.UI.RadDropDownList();
-            ((System.ComponentModel.ISupportInitialize)(this.radDropDownList1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDropDownList2)).BeginInit();
+            this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.SuspendLayout();
             // 
-            // radDropDownList1
+            // comboBoxEx1
             // 
-            this.radDropDownList1.Location = new System.Drawing.Point(57, 126);
-            this.radDropDownList1.Name = "radDropDownList1";
-            this.radDropDownList1.Size = new System.Drawing.Size(192, 20);
-            this.radDropDownList1.TabIndex = 1;
-            this.radDropDownList1.Text = "radDropDownList1";
-            this.radDropDownList1.ThemeName = "Windows8";
-            this.radDropDownList1.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(this.SelectedIndexChangedEvent);
-            // 
-            // radDropDownList2
-            // 
-            this.radDropDownList2.Location = new System.Drawing.Point(57, 100);
-            this.radDropDownList2.Name = "radDropDownList2";
-            this.radDropDownList2.Size = new System.Drawing.Size(192, 20);
-            this.radDropDownList2.TabIndex = 2;
-            this.radDropDownList2.Text = "radDropDownList2";
-            this.radDropDownList2.ThemeName = "Windows8";
+            this.comboBoxEx1.DisplayMember = "Text";
+            this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxEx1.ForeColor = System.Drawing.Color.Black;
+            this.comboBoxEx1.FormattingEnabled = true;
+            this.comboBoxEx1.ItemHeight = 14;
+            this.comboBoxEx1.Location = new System.Drawing.Point(106, 136);
+            this.comboBoxEx1.Name = "comboBoxEx1";
+            this.comboBoxEx1.Size = new System.Drawing.Size(121, 20);
+            this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.comboBoxEx1.TabIndex = 0;
+            this.comboBoxEx1.SelectedIndexChanged += new System.EventHandler(this.comboBoxEx1_SelectedIndexChanged);
             // 
             // Settings
             // 
             this.ClientSize = new System.Drawing.Size(323, 387);
-            this.Controls.Add(this.radDropDownList2);
-            this.Controls.Add(this.radDropDownList1);
+            this.ControlBox = true;
+            this.Controls.Add(this.comboBoxEx1);
+            this.DoubleBuffered = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Settings";
-            ((System.ComponentModel.ISupportInitialize)(this.radDropDownList1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radDropDownList2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private Telerik.WinControls.UI.RadDropDownList radDropDownList1;
-        private Telerik.WinControls.Themes.Windows8Theme w8;
-        private Telerik.WinControls.Themes.Office2013LightTheme o13;
-        private Telerik.WinControls.UI.RadDropDownList radDropDownList2;
+
+        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
     }
 }

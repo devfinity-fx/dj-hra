@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HRAssistant", "HRAssistant"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{0E8652DA-5259-4731-8B15-1860C1B5BC78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwingWERX", "D:\DevBox\SwingWERX\SwingWERX\SwingWERX.csproj", "{2E499785-60E7-48C9-A67F-E6DC9D2845CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwingWERX", "..\SwingWERX\SwingWERX\SwingWERX.csproj", "{2E499785-60E7-48C9-A67F-E6DC9D2845CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
